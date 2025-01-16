@@ -1,0 +1,67 @@
+#canvas{
+    border: 3px solid grey;
+    width: 1250px;
+    height: 400px;
+    background-color: white;
+}
+#h1{
+    width: 120px;
+    margin-top: 5px;
+}
+#container{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.show{
+    height: 50px;
+    margin-top: 15px;
+    width: fit-content;
+    border-radius: 10px;
+}
+#updateRectEllipse, #updateLine{
+    width: fit-content;
+    border-radius: 10px;
+}
+#containerActions{
+    margin-left: 20px;
+}
+#containerColors{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#body{
+    background-color: rgb(162, 255, 0);
+}
+.text{
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    border-color:black;
+    border-style: double;
+}
+.action{
+    background-color: white;
+    margin-top: 4px;
+    display: inline;
+    border: 4px solid seagreen;
+    padding: 10px;
+}
+.color{
+    background-color: white;
+    border: 5px solid seagreen;
+    padding: 10px;
+}
+.canvasBgColor, .lineThickness{
+    display: inline;
+    background-color: white;
+    border: 5px solid seagreen;
+    padding: 12px;
+}
+.input{
+    width: 40px;
+}
+#inputs{
+    margin-left: 90px;
+    margin-top: 30px;
+}

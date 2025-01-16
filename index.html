@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <div id="container">
+        <h1 id="h1">Canvas</h1>
+        <div>
+            <button class="show" id="ellipse">Ellipse</button>
+            <button class="show" id="rectangle">Rectangle</button>
+            <button class="show" id="line">Line</button>
+            <p class="text" id="shapes">Shapes</p>
+            <button class="show" id="savePNG">Save canvas to PNG</button>
+        </div>
+        <div id="containerActions">
+            <button class="show" id="delete">Delete shape</button>
+            <button class="show" id="update">Update shape</button>
+            <div class="action">
+                <select id="selectShape" name="shapes" onchange="deleteOptionAfterDeleteAll()">
+                <option disabled selected>Select a shape group to delete</option>
+                </select>
+            </div>
+            <p class="text" id="actions">Actions</p>
+            <div id="inputs">
+            <table>
+                <tr>
+                    <td>
+                        <label hidden id="labelX" for="shapeX">startX:</label>
+                        <input hidden class="input" id="shapeX" type="text">
+                    </td>
+                    <td>
+                        <label hidden id="labelY" for="shapeY">startY:</label>
+                        <input hidden class="input" id="shapeY" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label hidden id="labelX1" for="shapeX1">endX1:</label>
+                        <input hidden class="input" id="shapeX1" type="text">
+                    </td>
+                    <td>
+                        <label hidden id="labelY1" for="shapeY1">endY1:</label>
+                        <input hidden class="input" id="shapeY1" type="text">
+                    </td>
+                    <td>            
+                        <button hidden id="updateLine">Update</button>
+                    </td>
+                </tr>
+                <tr>
+                <td>
+                    <label hidden id="labelW" for="shapeW">width:</label>
+                    <input hidden class="input" id="shapeW" type="text">
+                </td>
+                <td>
+                    <label hidden id="labelH" for="shapeH">height:</label>
+                    <input hidden class="input" id="shapeH" type="text">
+                </td>
+                <td>            
+                    <button hidden id="updateRectEllipse">Update</button>
+                </td>
+                </tr>
+            </table>
+            </div>
+        </div>
+        <div id="containerColors">
+            <div class="canvasBgColor">
+                <label for="canvasColor">Canvas background color: </label>
+                <input id="canvasColor" type="color" value="#ffffff" onchange="getCanvasColor()">
+            </div>
+            <div class="lineThickness">
+                <select id="selectLine" name="line" onchange="getLineThickness()">
+                    <option disabled selected>Select line thickness</option>
+                    <option value="1">1px</option>
+                    <option value="3">3px</option>
+                    <option value="5">5px</option>
+                    <option value="8">8px</option>
+                </select>
+            </div>
+            <div class="color">
+                <label for="shapeBackgroundColor">Shape background color: </label>
+                <input id="shapeBackgroundColor" type="color" value="#ffffff" onchange="getShapeBackgroundColor()">
+                <button id="refreshBg" style="border-radius: 10px; margin-left: 10px;">Transparent background</button>
+            </div>
+            <div class="color">
+                <label for="shapeMarginColor">Shape margin color: </label>
+                <input id="shapeMarginColor" type="color" value="#ffffff" onchange="getShapeMarginColor()">
+                <button id="reset" style="border-radius: 10px; margin-left: 14px;">Reset Canvas</button>
+                <button id="undo" style="border-radius: 10px; margin-left: 10px;">Undo shape</button>
+            </div>
+            <p class="text" id="colors">Colors</p>
+            </div>
+        </div>
+    <canvas id="canvas" width="1250px" height="400px"></canvas>
+</body>
+<script src="script.js"></script>
+</html>
