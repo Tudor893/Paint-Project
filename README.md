@@ -8,7 +8,7 @@ Features 🚀
 
 🖌️ Freehand Drawing – Draw with different brush sizes and colors.
 
-🧽 Eraser Tool – Remove unwanted strokes.
+🧽 Eraser Tool – Remove unwanted shapes.
 
 🎨 Color Picker – Choose from a wide range of colors.
 
