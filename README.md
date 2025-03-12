@@ -1,6 +1,6 @@
-Paint Simulator 🎨
+# Paint Simulator 🎨
 
-Description
+### Description
 
 Paint Simulator is a simple yet powerful drawing application that mimics the core functionalities of Microsoft Paint. It allows users to draw, erase, and save their creations using an intuitive interface.
 
